@@ -4,31 +4,30 @@ public class Main {
 
         //task1
         int clientOS = 1;
-        switch (clientOS) {
-            case 0:
-                System.out.println("Установите версию приложения для iOS по ссылке");
-                break;
-            case 1:
-                System.out.println("Установите версию приложения для Android по ссылке");
-                break;
-            default:
-                System.out.println("Device not found, please enter correct operating system");
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }
+        else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        else {
+            System.out.println("Device not found, please enter correct operating system");
         }
 
         //task2
-        int ClientOS = 1;
+        int clientOS2 = 1;
         int clientDeviceYear = 2015;
         boolean newDevice = clientDeviceYear >= 2015;
-        if (!newDevice && ClientOS == 0) {
+        if (!newDevice && clientOS2 == 0) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
-        else if (newDevice && ClientOS == 0) {
+        else if (newDevice && clientOS2 == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
-        else if (!newDevice && ClientOS == 1) {
+        else if (!newDevice && clientOS2 == 1) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        else if (newDevice && ClientOS == 1) {
+        else if (newDevice && clientOS2 == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         else {
@@ -60,8 +59,8 @@ public class Main {
         }
 
         //task5
-        int month = 12;
-        switch (month) {
+        int monthNumber = 12;
+        switch (monthNumber) {
             case 1:
             case 2:
             case 12:
@@ -85,6 +84,5 @@ public class Main {
             default:
                 System.out.println("there is no such month");
         }
-
     }
 }
